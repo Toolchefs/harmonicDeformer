@@ -5,7 +5,7 @@ http://graphics.pixar.com/library/HarmonicCoordinatesB/paper.pdf
 
 If you are planning to use one of our tools in a studio, we would be grateful if you could let us know.
 
-##How to use
+## How to use
 
 Select the object that you want deform and then the cage geometry.
 From the Toolchefs menu select Deformers->tcHamonicDeformer to apply the deformer. Or you can use the following mel command:
@@ -15,7 +15,7 @@ tcComputeHarmonicWeights -d (deformerNode) -mi (iterations) -cs (cellsize) -ts (
 For instance: tcComputeHarmonicWeights -d tcHarmonicDeformer1 -mi 30 -cs 0.5 -ts 0.00001 -sg 0;
  
 
-#Deformer attributes
+# Deformer attributes
 
 * Cell size
 
