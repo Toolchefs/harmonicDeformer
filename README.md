@@ -45,7 +45,7 @@ The cage must have only faces with 3 or 4 vertices.
 
 ## License
 
-This project is licensed under [the LPGP license](http://www.gnu.org/licenses/).
+This project is licensed under [the LGPL license](http://www.gnu.org/licenses/).
 
 ## Contact us
 
