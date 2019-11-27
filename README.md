@@ -38,10 +38,21 @@ The default value is 0.000001.
 When the “dynamic binding” is on, the deformer queries a pre-solved grid and reassigns the weights to the input model whenever it changes. To make this happen, you must compute the weights with the “dynamicBinding” attribute on or set the sg flag of the tcComputeHarmonciWeights command to 1.
 Just be careful as this will use much more memory and your scene file size will be a lot bigger, since all the weights for every grid cell will be stored inside the deformer.
 
-##Know limitations:
+## Know limitations:
 
 The cage must be a closed mesh.
 The cage must have only faces with 3 or 4 vertices.
+## Compilation
+A makefile is provided to show the necessary steps for compilation, but if you wish to use it, will need to be modified for your enviroment. 
+Alternatively, a cmake file is provided to facilitate compilation. to compile run:
+```
+mkdir build
+cd build
+cmake ../ -DMAYA_VERSION=2018
+cmake --build . --config Release
+```
+The value of maya version needs to be the version of maya you wish to use, in this example, 2018 is used. If maya is installed in a standar place, it will be found, if not you will need to pass the path to look for. The project uses cgcmake by Chad Vernon, for more information head here: https://github.com/chadmv/cgcmake .
+As for every cmake, you can decide to build from any supported IDE by using the -G flag to generate the correct project file. 
 
 ## License
 
